@@ -14,6 +14,22 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__btn">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#about" class="navigation__link">About Natours</a></li>
+                    <li class="navigation__item"><a href="#features" class="navigation__link">Your benefits</a></li>
+                    <li class="navigation__item"><a href="#tours" class="navigation__link">Popular tours</a></li>
+                    <li class="navigation__item"><a href="#stories" class="navigation__link">Stories</a></li>
+                    <li class="navigation__item"><a href="#book" class="navigation__link">Book now</a></li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="white logo" class="header__logo">
@@ -26,73 +42,8 @@
                 <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
             </div>     
         </header>
-        <!--
-        <section class="grid-terst">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 of 3
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    Col 2 of 4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 of 4
-                </div>
-            </div>
-        </section>
-        -->
         <main>
-            <section class="section-about">
+            <section class="section-about" id="about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Exciting tours for adventurous people
@@ -113,7 +64,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-features">
+            <section class="section-features" id="features">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -149,7 +100,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id="tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most popular tours
@@ -257,7 +208,7 @@
                     <a href="#" class="btn btn--green">Discover all tours</a>
                 </div>
             </section>
-            <section class="section-stories">
+            <section class="section-stories" id="stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
                         <source src="img/video.mp4" type="video/mp4">
@@ -304,7 +255,7 @@
                     <a href="#" class="btn-text">Read all stories &rarr;</a>
                 </div>
             </section>
-            <section class="section-book">
+            <section class="section-book" id="book">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
@@ -365,7 +316,7 @@
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Build by <a href="#" class="footer__link">Jaruwat Arunpai</a> for front-end dev learning <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Jaruwat Arunpai. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
+                        Build by <a href="http://www.linkedin.com/in/jaruwat-arunpai-taa66" class="footer__link" target="_blank">Jaruwat Arunpai</a> for front-end dev learning <a href="https://www.udemy.com/course/advanced-css-and-sass/" class="footer__link" target="_blank">Advanced CSS and Sass</a>. Copyright &copy; by Jaruwat Arunpai. A credit to the original author, <a href="https://codingheroes.io" class="footer__link" target="_blank">Jonas Schmedtmann</a>, is of course highly appreciated!
                     </p>
                 </div>
             </div>
