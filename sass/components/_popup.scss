@@ -11,6 +11,12 @@
     visibility: hidden;
     transition: all .3s;
 
+    @supports(-webkit-backdrop-filter: blur(10px)) or  (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    }
+
     &__content {
         width: 75%;
         background-color: $color-white;
@@ -22,11 +28,21 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.2);
         transition: all .5s .2s;
+        
+        @include respond(tab-port) {
+            width: 80%;
+            display: block;
+        }
     }
 
     &__left {
         width: 33.333333%;
         display: table-cell;
+
+        @include respond(tab-port) {
+            width: 100%;
+            display: block;
+        }
     }
 
     &__right {
@@ -34,11 +50,19 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        @include respond(tab-port) {
+            width: 100%;
+            display: block;
+        }
     }
 
     &__img {
         display: block;
         width: 100%;
+        @include respond(tab-port) {
+            display: inline-block;
+            width: 45%;
+        }
     }
 
     &__text {
